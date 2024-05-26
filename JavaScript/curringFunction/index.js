@@ -24,28 +24,28 @@
 
 // real use case
 
-// const User = {
-//     name:"vishal",
-//     age:24
-// }
+const User = {
+    name:"vishal",
+    age:20
+}
 
-// function userIn(obj){
-// return function(userInfo){
-// return obj[userInfo]
-// }
-// }
+function userIn(obj){
+return function(userInfo){
+return obj[userInfo]
+}
+}
 
-// let res =userIn(User)
-// let userin=res("age")
-// console.log(userin);
+let res =userIn(User)
+let userin=res("name")
+console.log(userin);
 
 // infinite curring
 
-function add(a) {
-  return function (b) {
-    if (b) return add(a + b);
-    return a;
-  };
-}
+// function add(a) {
+//   return function (b) {
+//     if (b) return add(a + b);
+//     return a;
+//   };
+// }
 
-console.log(add(2)(4)(4)(5)(5)());
+// console.log(add(2)(4)(4)(5)(5)());

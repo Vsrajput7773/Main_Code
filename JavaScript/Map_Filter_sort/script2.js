@@ -47,7 +47,7 @@ const users = [
 //   findIndec() = solution
 // const isNameExist =(name,users)=>{
 //     const  user = users.findIndex((user)=> user.name === name)
-//     // return user    //0 1 for true -1 for false
+//     // return user    //0 1 for true / -1 for false
 //     return user >=0  //true of false
 // }
 
